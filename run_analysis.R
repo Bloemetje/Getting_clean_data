@@ -13,12 +13,6 @@ X_test <- read.table("./test/X_test.txt")
 # file y_test.txt
 y_test <- read.table("./test/y_test.txt")
 
-#read features and rename
-features <- read.table("./features.txt")
-features[,2] <- gsub("-mean", "_Mean", features[,2])
-features[,2] <- gsub("-std", "_Std", features[,2])
-features[,2] <- gsub('[-()]', '', features[,2])
-
 #read txt files in the train folder
 # file subject_train.txt
 subject_train <- read.table("./train/subject_train.txt")
@@ -26,6 +20,12 @@ subject_train <- read.table("./train/subject_train.txt")
 X_train <- read.table("./train/X_train.txt")
 # file y_train.txt
 y_train <- read.table("./train/y_train.txt")
+
+#read features and rename
+features <- read.table("./features.txt")
+features[,2] <- gsub("-mean", "_Mean", features[,2])
+features[,2] <- gsub("-std", "_Std", features[,2])
+features[,2] <- gsub('[-()]', '', features[,2])
 
 #merge all test data (subject_test, y_test, X_test)
 testdata <- cbind(X_test, subject_test, y_test)
