@@ -9,7 +9,7 @@ activity  6
   5 STANDING
   6 LAYING
 
-the variables with the pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+the variables (unit is g) with the pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
