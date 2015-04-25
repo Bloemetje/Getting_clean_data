@@ -1,6 +1,7 @@
 ## Data dictionary - data_2
 subject   1
-  subject number 1 to 30
+  30 subject available the subject number goes from 1 to 30
+  
 activity  6
   1 WALKING
   2 WALKING_UPSTAIRS
