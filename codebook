@@ -24,7 +24,7 @@ Activity  6
   6 LAYING
 
 tBodyAcc_MeanX 
-	The mean of the body acceleration, the axial signal is measured in the  X direction.
+  The mean of the body acceleration, the axial signal is measured in the  X direction.
 tBodyAcc_MeanY 
   The mean of the body acceleration, the axial signal is measured in the  Y direction.
 tBodyAcc_MeanZ 
