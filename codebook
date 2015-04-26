@@ -12,10 +12,10 @@ The data is analysed by the R scripted called run_analysis.R that does the follo
 It creates an independent tidy dataset according to the guidelines given by the Course Project within the Course Getting and Cleaning data. Where the data is averaged on each subject and each activity.
 
 ## Data dictionary - data_2
-subject  
+Subject  
   30 subjects available, the subject range  1 to 30
   
-activity  6
+Activity  6
   1 WALKING
   2 WALKING_UPSTAIRS
   3 WALKING_DOWNSTAIRS
@@ -29,160 +29,188 @@ tBodyAcc_MeanY
   The mean of the body acceleration, the axial signal is measured in the  Y direction.
 tBodyAcc_MeanZ 
   The mean of the body acceleration, the axial signal is measured in the  Z direction.
+  
 tBodyAcc_StdX 
   The Standard Deviation of the body acceleration, the axial signal is measured in the  X direction.
 tBodyAcc_StdY 
   The Standard Deviation of the body acceleration, the axial signal is measured in the Y direction.
 tBodyAcc_StdZ 
   The Standard Deviation of the body acceleration, the axial signal is measured in the Z direction.
+  
 tGravityAcc_MeanX 
   The mean of the gravity acceleration, the axial signal is measured in the  X direction.
 tGravityAcc_MeanY 
   The mean of the gravity acceleration, the axial signal is measured in the  Y direction.
 tGravityAcc_MeanZ 
   The mean of the gravity acceleration, the axial signal is measured in the  Z direction.
+  
 tGravityAcc_StdX 
   The Standard Deviation of the gravity acceleration, the axial signal is measured in the  X direction.
 tGravityAcc_StdY
   The Standard Deviation of the gravity acceleration, the axial signal is measured in the  Y direction.
 tGravityAcc_StdZ 
   The Standard Deviation of the gravity acceleration, the axial signal is measured in the  Z direction.
+  
 tBodyAccJerk_MeanX 
   The mean of the body acceleration Jerk signal, the axial signal is measured in the  X direction.
 tBodyAccJerk_MeanY 
   The mean of the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
 tBodyAccJerk_MeanZ 
   The mean of the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+  
 tBodyAccJerk_StdX 
-  The Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  X direction.
+  	The Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  X direction.
 tBodyAccJerk_StdY 
-The Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
+	The Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
 tBodyAccJerk_StdZ 
-The Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+	The Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+	
 tBodyGyro_MeanX 
-The mean of the angular velocity , the axial signal is measured in the  X direction.
+	The mean of the angular velocity , the axial signal is measured in the  X direction.
 tBodyGyro_MeanY 
-The mean of the angular velocity , the axial signal is measured in the  Y direction.
+	The mean of the angular velocity , the axial signal is measured in the  Y direction.
 tBodyGyro_MeanZ 
-The mean of the angular velocity , the axial signal is measured in the  Z direction.
+	The mean of the angular velocity , the axial signal is measured in the  Z direction.
+	
 tBodyGyro_StdX 
-The Standard Deviation of the angular velocity , the axial signal is measured in the  X direction.
+	The Standard Deviation of the angular velocity , the axial signal is measured in the  X direction.
 tBodyGyro_StdY
-The Standard Deviation of the angular velocity , the axial signal is measured in the  Y direction.
+	The Standard Deviation of the angular velocity , the axial signal is measured in the  Y direction.
 tBodyGyro_StdZ 
-The Standard Deviation of the angular velocity , the axial signal is measured in the  Z direction.
+	The Standard Deviation of the angular velocity , the axial signal is measured in the  Z direction.
+	
 tBodyGyroJerk_MeanX 
-The mean of the angular velocity Jerk signal, the axial signal is measured in the  X direction.
+	The mean of the angular velocity Jerk signal, the axial signal is measured in the  X direction.
 tBodyGyroJerk_MeanY 
-The mean of the angular velocity Jerk signal, the axial signal is measured in the  Y direction.
+	The mean of the angular velocity Jerk signal, the axial signal is measured in the  Y direction.
 tBodyGyroJerk_MeanZ 
-The mean of the angular velocity Jerk signal, the axial signal is measured in the  Z direction.
+	The mean of the angular velocity Jerk signal, the axial signal is measured in the  Z direction.
+	
 tBodyGyroJerk_StdX 
-The Standard Deviation of the angular velocity Jerk signal, the axial signal is measured in the  X direction.
+	The Standard Deviation of the angular velocity Jerk signal, the axial signal is measured in the  X direction.
 tBodyGyroJerk_StdY
-The Standard Deviation of the angular velocity Jerk signal, the axial signal is measured in the  Y direction.
+	The Standard Deviation of the angular velocity Jerk signal, the axial signal is measured in the  Y direction.
 tBodyGyroJerk_StdZ 
-The Standard Deviation of the angular velocity Jerk signal, the axial signal is measured in the  Z direction.
+	The Standard Deviation of the angular velocity Jerk signal, the axial signal is measured in the  Z direction.
+	
 tBodyAccMag_Mean 
 	the magnitude of the mean of the body acceleration three-dimensional signals were calculated using the Euclidean norm
 tBodyAccMag_Std
-the magnitude of the Standard deviation of the body acceleration three-dimensional signals were calculated using the Euclidean norm
+	the magnitude of the Standard deviation of the body acceleration three-dimensional signals were calculated using the Euclidean norm
+	
 tGravityAccMag_Mean
 	the magnitude of the mean of the gravity acceleration three-dimensional signals were calculated using the Euclidean norm
 tGravityAccMag_Std 
-the magnitude of the Standard deviation of the gravity acceleration three-dimensional signals were calculated using the Euclidean norm
+	the magnitude of the Standard deviation of the gravity acceleration three-dimensional signals were calculated using the Euclidean norm
+
 tBodyAccJerkMag_Mean
 	the magnitude of the mean of the body acceleration Jerk three-dimensional signals were calculated using the Euclidean norm
 tBodyAccJerkMag_Std 
-the magnitude of the Standard deviation of the body acceleration Jerk three-dimensional signals were calculated using the Euclidean norm
+	the magnitude of the Standard deviation of the body acceleration Jerk three-dimensional signals were calculated using the Euclidean norm
+
 tBodyGyroMag_Mean 
 	the magnitude of the mean of the angular velocity three-dimensional signals were calculated using the Euclidean norm
 tBodyGyroMag_Std 
-the magnitude of the Standard deviation of the angular velocity three-dimensional signals were calculated using the Euclidean norm
+	the magnitude of the Standard deviation of the angular velocity three-dimensional signals were calculated using the Euclidean norm
+
 tBodyGyroJerkMag_Mean 
 	the magnitude of the mean of the angular velocity Jerk three-dimensional signals were calculated using the Euclidean norm
 tBodyGyroJerkMag_Std 
-the magnitude of the Standard deviation of the angular velocity Jerk three-dimensional signals were calculated using the Euclidean norm
+	the magnitude of the Standard deviation of the angular velocity Jerk three-dimensional signals were calculated using the Euclidean norm
+
 fBodyAcc_MeanX 
-Fast Fourier Transform (FFT) was applied to the mean of the body acceleration, the axial signal is measured in the  X direction.
+	Fast Fourier Transform (FFT) was applied to the mean of the body acceleration, the axial signal is measured in the  X direction.
 fBodyAcc_MeanY 
-Fast Fourier Transform (FFT) was applied to the mean of the body acceleration, the axial signal is measured in the Y direction.
+	Fast Fourier Transform (FFT) was applied to the mean of the body acceleration, the axial signal is measured in the Y direction.
 fBodyAcc_MeanZ 
-Fast Fourier Transform (FFT) was applied to the mean of the body acceleration, the axial signal is measured in the  Z direction.
+	Fast Fourier Transform (FFT) was applied to the mean of the body acceleration, the axial signal is measured in the  Z direction.
+
 fBodyAcc_StdX 
-Fast Fourier Transform (FFT) was applied to the Standard deviation of the body acceleration, the axial signal is measured in the  X direction.
+	Fast Fourier Transform (FFT) was applied to the Standard deviation of the body acceleration, the axial signal is measured in the  X direction.
 fBodyAcc_StdY
-Fast Fourier Transform (FFT) was applied to the Standard deviation of the body acceleration, the axial signal is measured in the  Y direction.
+	Fast Fourier Transform (FFT) was applied to the Standard deviation of the body acceleration, the axial signal is measured in the  Y direction.
 fBodyAcc_StdZ 
-Fast Fourier Transform (FFT) was applied to the Standard deviation of the body acceleration, the axial signal is measured in the  Z direction.
+	Fast Fourier Transform (FFT) was applied to the Standard deviation of the body acceleration, the axial signal is measured in the  Z direction.
+
 fBodyAcc_MeanFreqX 
  	Weighted average of the frequency components to obtain a mean frequency of  the body acceleration, the axial signal is measured in the  X direction.
 fBodyAcc_MeanFreqY 
-Weighted average of the frequency components to obtain a mean frequency of  the body acceleration, the axial signal is measured in the  Y direction.
+	Weighted average of the frequency components to obtain a mean frequency of  the body acceleration, the axial signal is measured in the  Y direction.
 fBodyAcc_MeanFreqZ
-Weighted average of the frequency components to obtain a mean frequency of  the body acceleration, the axial signal is measured in the  Z direction.
+  	Weighted average of the frequency components to obtain a mean frequency of  the body acceleration, the axial signal is measured in the  Z direction.
+
 fBodyAccJerk_MeanX 
-Fast Fourier Transform (FFT) was applied to the mean of the body acceleration Jerk signal, the axial signal is measured in the  X direction.
+  Fast Fourier Transform (FFT) was applied to the mean of the body acceleration Jerk signal, the axial signal is measured in the  X direction.
 fBodyAccJerk_MeanY 
-Fast Fourier Transform (FFT) was applied to the mean of the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
+  Fast Fourier Transform (FFT) was applied to the mean of the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
 fBodyAccJerk_MeanZ 
-Fast Fourier Transform (FFT) was applied to the mean of the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+  Fast Fourier Transform (FFT) was applied to the mean of the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+
 fBodyAccJerk_StdX 
-Fast Fourier Transform (FFT) was applied to the Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  X direction.
+  Fast Fourier Transform (FFT) was applied to the Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  X direction.
 fBodyAccJerk_StdY 
-Fast Fourier Transform (FFT) was applied to the Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
+  Fast Fourier Transform (FFT) was applied to the Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
 fBodyAccJerk_StdZ
-Fast Fourier Transform (FFT) was applied to the Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+  Fast Fourier Transform (FFT) was applied to the Standard Deviation of the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+
 fBodyAccJerk_MeanFreqX 
-Weighted average of the frequency components to obtain a mean frequency of  the body acceleration Jerk signal, the axial signal is measured in the  X direction.
+  Weighted average of the frequency components to obtain a mean frequency of  the body acceleration Jerk signal, the axial signal is measured in the  X direction.
 fBodyAccJerk_MeanFreqY 
-Weighted average of the frequency components to obtain a mean frequency of  the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
+  Weighted average of the frequency components to obtain a mean frequency of  the body acceleration Jerk signal, the axial signal is measured in the  Y direction.
 fBodyAccJerk_MeanFreqZ 
-Weighted average of the frequency components to obtain a mean frequency of  the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+  Weighted average of the frequency components to obtain a mean frequency of  the body acceleration Jerk signal, the axial signal is measured in the  Z direction.
+
 fBodyGyro_MeanX 
   Fast Fourier Transform (FFT) was applied to the mean of the angular velocity, the axial signal is measured in the X direction.
 fBodyGyro_MeanY 
   Fast Fourier Transform (FFT) was applied to the mean of the angular velocity, the axial signal is measured in the Y direction.
 fBodyGyro_MeanZ
   Fast Fourier Transform (FFT) was applied to the mean of the angular velocity, the axial signal is measured in the Z direction.
+
 fBodyGyro_StdX 
   Fast Fourier Transform (FFT) was applied to the Standard Deviation of the angular velocity, the axial signal is measured in the X direction.
 fBodyGyro_StdY 
   Fast Fourier Transform (FFT) was applied to the Standard Deviation of the angular velocity, the axial signal is measured in the Y direction.
 fBodyGyro_StdZ 
   Fast Fourier Transform (FFT) was applied to the Standard Deviation of the angular velocity, the axial signal is measured in the Z direction.
+
 fBodyGyro_MeanFreqX
   Weighted average of the frequency components to obtain a mean frequency of the angular velocity, the axial signal is measured in the  X direction.
 fBodyGyro_MeanFreqY
   Weighted average of the frequency components to obtain a mean frequency of the angular velocity, the axial signal is measured in the Y direction.
 fBodyGyro_MeanFreqZ
   Weighted average of the frequency components to obtain a mean frequency of the angular velocity, the axial signal is measured in the Z direction.
+
 fBodyAccMag_Mean
   Fast Fourier Transform (FFT) was applied to the magnitude of the mean of the body acceleration three-dimensional signals were calculated using the Euclidean norm
 fBodyAccMag_Std 
   Fast Fourier Transform (FFT) was applied to the magnitude of the standard deviation of the body acceleration three-dimensional signals were calculated using the Euclidean norm
 fBodyAccMag_MeanFreq 
   Fast Fourier Transform (FFT) was applied to the weighted average of the frequency magnitude of the body acceleration three-dimensional signals were calculated using the Euclidean norm
+
 fBodyBodyAccJerkMag_Mean 
   Fast Fourier Transform (FFT) was applied to the magnitude of the mean of the body acceleration three-dimensional Jerk signals were calculated using the Euclidean norm
 fBodyBodyAccJerkMag_Std 
   Fast Fourier Transform (FFT) was applied to the magnitude of the standard deviation of the body acceleration three-dimensional Jerk signals were calculated using the Euclidean norm
 fBodyBodyAccJerkMag_MeanFreq 
   Fast Fourier Transform (FFT) was applied to the weighted average of the frequency magnitude of the body acceleration three-dimensional Jerk signals were calculated using the Euclidean norm
+
 fBodyBodyGyroMag_Mean 
   Fast Fourier Transform (FFT) was applied to the magnitude of the mean of the angular velocitythree-dimensional signals were calculated using the Euclidean norm
 fBodyBodyGyroMag_Std 
   Fast Fourier Transform (FFT) was applied to the magnitude of the standard deviation of the angular velocitythree-dimensional signals were calculated using the Euclidean norm
 fBodyBodyGyroMag_MeanFreq 
   Fast Fourier Transform (FFT) was applied to the weighted average of the frequency magnitude of the angular velocitythree-dimensional signals were calculated using the Euclidean norm
+
 fBodyBodyGyroJerkMag_Mean 
   Fast Fourier Transform (FFT) was applied to the magnitude of the mean of the angular velocitythree-dimensional Jerk signals were calculated using the Euclidean norm
 fBodyBodyGyroJerkMag_Std 
   Fast Fourier Transform (FFT) was applied to the magnitude of the standard deviation of the angular velocitythree-dimensional Jerk signals were calculated using the Euclidean norm
 fBodyBodyGyroJerkMag_MeanFreq 
   Fast Fourier Transform (FFT) was applied to the weighted average of the frequency magnitude of the angular velocitythree-dimensional Jerk signals were calculated using the Euclidean norm
+
 angletBodyAccMean,gravity 
-	angle between the mean of the body acceleration signal and gravity
+  angle between the mean of the body acceleration signal and gravity
 angletBodyAccJerkMean,gravityMean 
   angle between the mean of the body acceleration Jerk signal and the mean of the gravity
 angletBodyGyroMean,gravityMean 
