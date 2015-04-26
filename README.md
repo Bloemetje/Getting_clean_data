@@ -1,13 +1,13 @@
-### Getting_clean_data_The_Course_Project
+## Getting_clean_data_The_Course_Project
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. 
 The goal is to prepare tidy data that can be used for later analysis. This repo explains how all of the scripts work and how they are connected. 
 
-##The original data can be downloaded here:
+###The original data can be downloaded here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 The description of these downloaded data is available at the site:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-##The Script, Global description:
+###The Script, Global description:
 The data is analysed by the R script called run_analysis.R that does the following. 
 Merges the training and the test sets to one data set.
 Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -15,7 +15,7 @@ Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive variable names. 
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Full description:
+###Full description:
 1) The libraries necessary for the run_analysis.R script are plyr and dplyr. The wd is set to the UCI HAR
 Dataset folder. The files (features, X_test, y_test, subject_test, X_train, y_test and subject_train all .txt files)
 are loaded with the read table function.
