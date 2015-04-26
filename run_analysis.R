@@ -3,9 +3,6 @@
 library(plyr)
 library(dplyr)
 
-# set working directory
-setwd("~/Documents/coursera/UCI HAR Dataset")
-
 #read txt files in the test folder
 # file subject_test.txt
 subject_test <- read.table("./test/subject_test.txt")
