@@ -1,3 +1,4 @@
+### This R script makes a tidy dataset of the raw data profited by the Course project, according to the guidelines of the Course Project
 # load library
 library(plyr)
 library(dplyr)
@@ -37,7 +38,7 @@ traindata <- cbind(X_train,subject_train, y_train)
 data <- rbind(testdata, traindata)
 
 #select the mean and stdev columns
-columns <- grep(".*Mean.*|.*Std.*", features[,2])
+columns <- grep(".*Mean.*|.*Std.*| .*Std| .*Mean", features[,2])
 columnN <- c(columns, 562,563)
 features <- features[columns,]
 features <- c(features[,2],"subject","activity")
@@ -51,5 +52,5 @@ write.table(data, "data.txt")
 ## Second independent tidy data set with the 
 ## average of each variable for each activity and each subject
 
-data_2 <- ddply(data, .(subject, activity), function(x) colMeans(x[, 1:66]))
+data_2 <- ddply(data, .(subject, activity), function(x) colMeans(x[, 1:86]))
 write.table(data_2, "data_2.txt", row.name=FALSE)
