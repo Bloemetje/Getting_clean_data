@@ -16,8 +16,7 @@ Appropriately labels the data set with descriptive variable names.
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ###Full description:
-1) The libraries necessary for the run_analysis.R script are plyr and dplyr these are loaded. The wd is set to the "UCI HAR
-Dataset folder". The files (features, X_test, y_test, subject_test, X_train, y_test and subject_train all .txt files)
+1) The libraries necessary for the run_analysis.R script are plyr and dplyr these are loaded. The files (features, X_test, y_test, subject_test, X_train, y_test and subject_train all .txt files)
 are loaded with the read table function.
 
 2) The names in the features file are mutated so R can work with it. The files X_test, y_test, subject_test are cbind to the testdata dataset, the files X_train, y_test and subject_train are cbind to the traindata dataset. 
